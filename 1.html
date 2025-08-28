@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Styled Checkbox</title>
+  <style>
+
+
+    .container {
+      margin: 0.5px;
+      border: solid #ccc;
+      padding: 8px;
+      border-radius: 7px;
+      
+    }
+
+    h1 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .checkbox-group {
+      display: flex;
+      gap: 20px;
+    }
+
+    .checkbox-wrapper {
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .checkbox-wrapper input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+    }
+
+    .custom-box {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 20px;
+      width: 20px;
+      background-color: #f1f1f1;
+      border: 2px solid #aaa;
+      border-radius: 4px;
+      transition:  0.3s ;
+    }
+
+    .checkbox-wrapper input:checked + .custom-box {
+      background-color: #4CAF50;
+      border-color: #4CAF50;
+      transform: scale(1.1);
+    }
+
+    .custom-box::after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    .checkbox-wrapper input:checked + .custom-box::after {
+      display: block;
+    }
+
+    .checkbox-wrapper .custom-box::after {
+      left: 6px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><strong>Preview:</strong></h1>
+    <div class="checkbox-group">
+      <label class="checkbox-wrapper">Oranges
+        <input type="checkbox" name="chk1" />
+        <span class="custom-box"></span>
+      </label>
+
+      <label class="checkbox-wrapper">Bananas
+        <input type="checkbox" name="chk2" />
+        <span class="custom-box"></span>
+      </label>
+    </div>
+  </div>
+</body>
+</html>

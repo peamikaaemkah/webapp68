@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-container{
+            position: relative;
+            display: inline-block
+        }
+        .menu-button{
+            background-color: blueviolet;
+            width: 70px;
+            height: 70px;
+            border: none;
+            cursor: pointer;
+        }
+        .menu-container:hover .menu-items,
+        .menu-button:focus + .menu-items {
+            display: block;
+        }
+
+        .menu-items{
+            position: absolute;
+            display: none;
+        }
+        .menu-items a{
+            text-decoration: none;
+            display: block;
+        }
+        .menu-items a:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-container">
+        <button class="menu-button"></button>
+        <div class="menu-items">
+            <a href="#">Option1</a>
+            <a href="#">Option2</a>
+            <a href="#">Option3</a>
+        </div>
+
+    </div>
+</body>
+</html>

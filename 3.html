@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .list-container{
+      overflow-y: scroll;
+      background-color: #2d5c99;
+      height: 200px;
+      width: 300px;
+      border-radius: 15px;
+      border: 10px;
+      margin: 30px;
+      color: aliceblue;
+    }
+    .section {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .Heading {
+      position: sticky;
+      top: 10px;
+      background-color: #1c3a6b;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      line-height: 30px;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+    }
+    li{
+      list-style: none;
+      padding: 4px 0;
+    }
+
+  </style>
+</head>
+<body>
+  <h1><strong>Preview :</strong></h1>
+  <div class="list-container">
+    
+    <div class="section">
+      <div class="Heading">A</div>
+        <ui>
+          <li>Aaban</li>
+          <li>Aabel</li>
+          <li>Aabheer</li>
+          <li>Aadam</li>
+        </ui>
+    </div>
+    
+    <div class="section">
+      <div class="Heading">B</div>
+        <ui>
+          <li>Baabul</li>
+          <li>Baalaji</li>
+          <li>Baalkrishan</li>
+          <li>Bannke Bihaari</li>
+        </ui>
+    </div>
+
+    <div class="section">
+      <div class="Heading">C</div>
+      <ul>
+        <li>Caddam</li>
+        <li>Chaitanya</li>
+        <li>Chandresh</li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>
