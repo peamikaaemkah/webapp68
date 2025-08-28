@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .scrollflower{
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: y mandatory;
+            gap: 5px;
+            padding: 10px;
+            border: 2px solid darkgray;
+            
+        }
+        .scrollflower img{           
+            width: 150px;
+            height: 100%;
+            border-radius: 8px;
+            scroll-snap-align: start;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollflower">
+        <img src="flower1.jpg" >
+        <img src="flower2.jpg">
+        <img src="flower3.jpeg" >
+        <img src="flower4.jpg">
+        <img src="flower5.jpg" >
+    </div>
+</body>
+</html>
